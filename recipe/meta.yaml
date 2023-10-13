@@ -18,16 +18,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - setuptools >=42.0
-    - wheel
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - python-hookman
     - typing_inspect
-    - strictyaml <1.4
-    - ruamel.yaml <0.16.13
+    - strictyaml >=1.4.3
     - boltons
     - click >=7.0
     - barril >=1.13,<2.0
