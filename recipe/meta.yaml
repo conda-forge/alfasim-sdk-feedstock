@@ -1,5 +1,5 @@
 {% set name = "alfasim-sdk" %}
-{% set version = "0.20.0" %}
+{% set version = "2024.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/alfasim_sdk-{{ version }}.tar.gz
-  sha256: bbb4a1dbbab6eb9eae911ccada2bc062a80fb6509252026866968bb055222a2d
+  sha256: 02364269dc1b8fc4462bbfb765076cfbf3a80cc096f7beec1eacefb3edd7bdf5
 
 build:
   entry_points:
     - alfasim-sdk=alfasim_sdk:console_main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
