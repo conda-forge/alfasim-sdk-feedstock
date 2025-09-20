@@ -1,5 +1,5 @@
 {% set name = "alfasim-sdk" %}
-{% set version = "1.0.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/alfasim_sdk-{{ version }}.tar.gz
-  sha256: c4a0860ff116d68b9023d73bcf440ceeec01bbfc02431b23677c7847bd10fc78
+  sha256: 6e35061cdf1c635c4bb4e574da08cff74ff45295b70ad43cd36161f53e525474
 
 build:
   entry_points:
@@ -28,7 +28,7 @@ requirements:
     - strictyaml >=1.4.3
     - boltons
     - click >=7.0
-    - barril >=1.13,<2.0
+    - barril >=1.13,<3.0
     - pluggy >=0.13.0
     - h5py
 
