@@ -1,5 +1,6 @@
 {% set name = "alfasim-sdk" %}
 {% set version = "1.4.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -23,14 +24,17 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - python-hookman
-    - typing_inspect
-    - strictyaml >=1.4.3
-    - boltons
+    - attrs >=24.3.0
     - click >=7.0
     - barril >=1.13,<3.0
-    - pluggy >=0.13.0
+    - boltons
     - h5py
+    - packaging
+    - pluggy >=0.13.0
+    - python-hookman
+    # 1.4.3 seems to be the first version which bundles ruamel.
+    - strictyaml >=1.4.3
+    - typing_inspect
 
 test:
   imports:
