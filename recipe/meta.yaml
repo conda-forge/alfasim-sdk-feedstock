@@ -1,5 +1,5 @@
 {% set name = "alfasim-sdk" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/alfasim_sdk-{{ version }}.tar.gz
-  sha256: 390a07a7d5bcce6547a1bcc81f8cfbe7489096e34ed843df0fe18ffcbf17fcd9
+  sha256: aae35b469b03202b72f3ba72a92bc9ed2df2cd4d4f015fd965656f086185f605
 
 build:
   entry_points:
